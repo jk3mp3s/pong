@@ -23,7 +23,7 @@ export default function App() {
     setGs(prev => ({
       ...prev,
       phase: 'gameover',
-      playerStreak: result.new_player_streak,
+      playerStreak: prev.playerStreak,
       bestStreak: result.new_best_streak,
       aiLevel: result.new_ai_level,
       aiLosses: result.new_ai_losses,
