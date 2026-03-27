@@ -1,0 +1,9 @@
+export const W = 700
+export const H = 420
+export const PAD_W = 12
+export const PAD_H = 80
+export const BALL_R = 8
+export const PLAYER_X = 24
+export const AI_X = W - 24 - PAD_W
+export const BALL_SPEED_BASE = 4.5
+export const AI_POLL_MS = 16   // how often (ms) we ask the backend for AI position
