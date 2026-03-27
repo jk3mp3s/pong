@@ -8,7 +8,13 @@ app = FastAPI(title="Pong AI API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://pong-murex-beta.vercel.app",
+        "https://pong-git-main-jk3mp3s-projects.vercel.app",
+        "https://pong-rcualk3wl-jk3mp3s-projects.vercel.app",
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
